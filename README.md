@@ -34,3 +34,15 @@ Default params:
 ```
 branch=${1:-`git rev-parse --abbrev-ref HEAD`} #given branch or current
 ```
+
+Saving current process pid:
+
+```
+echo $$ > "./storage/downloads/$name.pid"
+```
+
+Getting last errorcode:
+
+```
+echo $?
+```
