@@ -17,7 +17,7 @@ ssh ${options} -t $server "test -e $image" || {
 }
 ```
 
-Making SSH STFU (and bit insecure)
+Making SSH STFU (And bit insecure)
 
 ```
 options="-i ./storage/keys/id_rsa -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=error"
@@ -33,6 +33,12 @@ Default params:
 
 ```
 branch=${1:-`git rev-parse --abbrev-ref HEAD`} #given branch or current
+```
+
+Tar a current directory:
+
+```
+tar cvz [--remove-files] -f mytarfile.tgz .
 ```
 
 Saving current process pid:
