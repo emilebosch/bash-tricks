@@ -52,3 +52,9 @@ Getting last errorcode:
 ```
 echo $?
 ```
+
+Resetting your terminal:
+
+```
+reset
+```
